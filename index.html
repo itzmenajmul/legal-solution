@@ -23,10 +23,13 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+                        'bg-banner': "url('./images/banner.png')",
+                    },
                     colors: {
                         'secondary-color': '#707070',
                         'primary-color': '#B68C5A',
-                    }
+                    },
                 }
             }
         }
@@ -61,7 +64,7 @@
                         </label>
                         <!-- small device menu -->
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 font-poppins text-base text-secondary-color">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-poppins text-base text-secondary-color">
                             <li><a>Home</a></li>
                             <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
                             <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
@@ -84,11 +87,39 @@
                 </div>
                 <!-- right site btn -->
                 <div class="navbar-end">
-                    <a class="btn rounded-lg bg-primary-color md:w-[220px] md:text-lg text-white font-semibold font-poppins capitalize">Free Consultation</a>
+                    <a
+                        class="btn rounded-lg bg-primary-color md:w-[220px] md:text-lg text-white font-semibold font-poppins capitalize">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
         <!-- nav section ends here -->
+
+        <!-- banner section starts here -->
+        <section>
+            <div class="hero bg-bg-banner lg:h-[550px]">
+                <div class="hero-content text-center text-neutral-content">
+                    <div>
+                        <!-- banner title & description -->
+                        <div class="lg:max-w-3xl">
+                            <h1 class="mb-5 text-[#FFF] text-2xl lg:text-7xl lg:font-extrabold font-eb-garamond">We Provide
+                                Effective Legal Solutions</h1>
+                            <p class="mb-5 text-xs lg:text-base font-poppins text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        </div>
+                        <!-- banner input & btn -->
+                        <div>
+                            <input
+                                class="p-4 lg:w-[350px] bg-[#FFF] rounded-lg text-[#A0A0A0] font-poppins text-base outline-none "
+                                type="text" placeholder="Search your services">
+                            <div class="inline-block py-8 ml-5">
+                                <a class="btn rounded-lg bg-primary-color md:w-[150px] md:text-xl text-white font-semibold font-poppins capitalize border-0">Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner section ends here -->
     </header>
     <main>
 
