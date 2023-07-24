@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
-
+    <!-- added font awesome -->
+    <script src="https://kit.fontawesome.com/2a971a071b.js" crossorigin="anonymous"></script>
     <!-- added tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +24,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'secondary-color': '#707070',
+                        'primary-color': '#B68C5A',
                     }
                 }
             }
@@ -31,10 +33,11 @@
     </script>
     <!-- common shared style -->
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
-        .font-eb-garamond{
+
+        .font-eb-garamond {
             font-family: 'EB Garamond', serif;
         }
     </style>
@@ -42,8 +45,50 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="max-w-7xl m-auto">
+        <!-- nav section starts here -->
+        <nav class="my-3 md:my-20">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <!-- btn small device hide-->
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <!-- small device menu -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 font-poppins text-base text-secondary-color">
+                            <li><a>Home</a></li>
+                            <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- left site logo -->
+                    <a class=""><img src="./images/logo2.png" alt=""></a>
+                </div>
+                <!-- lg device menu -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-poppins text-base text-secondary-color">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <!-- right site btn -->
+                <div class="navbar-end">
+                    <a class="btn rounded-lg bg-primary-color md:w-[220px] md:text-lg text-white font-semibold font-poppins capitalize">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- nav section ends here -->
     </header>
     <main>
 
